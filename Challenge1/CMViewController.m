@@ -18,6 +18,24 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self printNumber:5];
+    [self differenzaAlto:6 differenzaBasso:2];
+
+}
+
+-(int)printNumber:(int)number
+{
+    for (int i=number; i>0; i--) {
+        NSLog(@"%i",i);
+    }
+    return number;
+}
+
+-(void)differenzaAlto:(int)alto differenzaBasso:(int)basso
+{
+    for (int i=alto; i>=basso; i--) {
+        NSLog(@"%i",i);
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

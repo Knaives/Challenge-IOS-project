@@ -10,4 +10,8 @@
 
 @interface CMViewController : UIViewController
 
+-(int)printNumber:(int)number;
+-(void)differenzaAlto:(int)alto differenzaBasso:(int)basso;
+
+
 @end
